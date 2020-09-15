@@ -22,7 +22,7 @@
       <button type="button" class="btn-calc" (click)="operationCalculator(op.MultiplyOperation)">x</button>
     </div>
     <div class="btn-row">
-      <button type="button" class="btn-calc" (click)="operationCalculator('0')">0</button>
+      <button type="button" class="btn-calc" (dblclick)="resetValues()" (click)="operationCalculator('0')">0</button>
       <button type="button" class="btn-calc" (click)="operationCalculator('.')">.</button>
       <button type="submit" class="btn-calc" (click)="calculate()">=</button>
       <button type="button" class="btn-calc" (click)="operationCalculator(op.DivisionOperation)">÷</button>
